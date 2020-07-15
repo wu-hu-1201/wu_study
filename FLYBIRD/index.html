@@ -17,12 +17,16 @@
         <div id ="grassLand2"></div><!--草地2-->
     </div>
     <script src="./js/bird.js"></script>
+    <script src="./js/baseObj.js"></script>
+    <script src="./js/block.js"></script>
     <script>
         var jsWrapBg = document.getElementById('wrapBg')
         var jsHeadtitle = document.getElementById('headTitle') //获取标题
         var jsHeadBird = document.getElementById('headBird') //获取标题中的小鸟
+        var blockArr = []   //装管道的
+        var blockDistance =baseObj.randomNum(120, 350)  //管道之间的间隔
 
-        var Y = 3
+        var Y = 3  //标题摆动的速度
         var index = 0 
         var imgArr = ['img/bird0.png', 'img/bird1.png']
         //利用帧动画的原理做出小鸟翅膀摆动的样子
@@ -48,7 +52,30 @@
             }
             jsGrassLand1.style.left = jsGrassLand1.offsetLeft - 3 + 'px'
             jsGrassLand2.style.left = jsGrassLand2.offsetLeft - 3 + 'px'
-        }
+
+
+            // 管道的移动
+            if (blockArr.length){
+                for (var i = 0; i<blockArr.length; i++){
+                    //console.log(i)
+                    blockArr[i].moveBlock()
+                    var x = baseObj.rectangleCrashExamine( blockArr[i].downDivWrap, bird.div)
+                    var y = baseObj.rectangleCrashExamine( blockArr[i].upDivWrap, bird.div)
+                    var z = bird.div.offsetTop >=390
+                    if (x || y || z) {  //满足该条件 游戏结束
+                        window.clearInterval(landTimer)  //清除草地移动的定时器
+                        jsWrapBg.onclick = null     //点击事件就不存在了
+                        bird.fallSpeed = 0    
+                    }
+                }
+
+                if (blockArr[blockArr.length - 1].downDivWrap.offsetLeft < (450 - blockDistance)) {
+                    var newBlock = new Block()    
+                    newBlock.createBlock()
+                    blockArr.push(newBlock)            
+                }
+            }
+         }
 
 
         var jsSatrtBtn = document.getElementById('startBtn')
@@ -58,6 +85,18 @@
             jsSatrtBtn.style.display = 'none'
             //插入小鸟到界面当中
             bird.showBird(jsWrapBg)
+            bird.flyBird() //调用小鸟下落
+            bird.wingWave() //调用小鸟翅膀扇动
+            jsWrapBg.onclick = function () {
+                bird.fallSpeed = -8
+            }
+
+
+        //出现管道
+        var b = new Block()
+        b.createBlock()
+        blockArr.push(b)
+  
         }
 
     </script>
