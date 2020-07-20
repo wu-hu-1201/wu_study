@@ -1042,13 +1042,6 @@ ul {
   margin-left: 30px;
   line-height: 21px;
 }
-.comment-list li .desc {
-  font-size: 0;
-  line-height: normal;
-  margin-bottom: 5px;
-  color: #494949;
-  position: relative;
-}
 .comment-list li .desc .user-name {
   font-size: 15px;
   display: inline-block;
@@ -1072,10 +1065,15 @@ ul {
 .rating-star-medium-full {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR…xA5gt4yqs0lx/gTPFj5FFD4NGlPGf8MZx6acRQfq91Lv8AZLTfj0RLVbcAAAAASUVORK5CYII=);
 }
-.rating-star-medium-full, .rating-star-medium-half, .rating-star-medium-gray {
+.rating-star-medium-full, 
+.rating-star-medium-half, 
+.rating-star-medium-gray {
   width: 13px;
   height: 13px;
   background-size: 13px 13px;
+}
+.rating-star-medium-gray {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR…wWZeCvODfod3k7l+LxuOVHA/guSW6QwBqUbWJ8GtN0wj/otREARiWDTAAAAABJRU5ErkJggg==);
 }
 .comment-list li .desc .date {
   font-size: 11px;
@@ -1086,7 +1084,12 @@ ul {
   top: 2px;
   margin-left: 5px;
 }
-/*.comment-list li .comment-content {
+
+
+
+
+
+.comment-list li .comment-content {
   margin-left: 30px;
 }
 .comment-list li p {
@@ -1099,6 +1102,11 @@ ul {
   padding-bottom: 15px;
   border-bottom: 1px solid #efefef;
 }
+.comment-list li .btn-info {
+  height: 22px;
+  margin-top: 10px;
+  margin-left: 30px;
+}
 .ic-btn.left {
   float: left;
 }
@@ -1108,9 +1116,6 @@ ul {
   font-size: 14px;
   cursor: pointer;
 }
-.ic-btn-like::before {
-  background-image: url(/f/talion/7a0756b…/pics/card/ic_like_gray.svg);
-}
 .ic-btn::before {
   content: '';
   width: 20px;
@@ -1119,6 +1124,9 @@ ul {
   background-repeat: no-repeat;
   display: inline-block;
   margin-bottom: -2px;
+}
+.ic-btn-like::before {
+  background-image: url(/f/talion/7a0756b…/pics/card/ic_like_gray.svg);
 }
 .ic-btn .text {
   color: #ccc;
@@ -1130,19 +1138,8 @@ ul {
 .ic-btn.right {
   float: right;
 }
-.ic-btn {
-  display: inline-block;
-  margin-right: 20px;
-  font-size: 14px;
-  cursor: pointer;
-}
 .ic-btn-more::before {
   background-image: url(/f/talion/be268c0…/pics/card/more.svg);
-}
-.comment-list li::after {
-  height: 0;
-  left: 34px;
-  right: 0;
 }
 .list li::after {
   left: 0;
@@ -1154,4 +1151,15 @@ ul {
   content: '';
   position: absolute;
   -webkit-transform-origin: 0 bottom;
-}*/
+}
+.comment-list li::after {
+  height: 0;
+  left: 34px;
+  right: 0;
+}
+.show-all {
+  margin: 15px auto;
+  font-size: 15px;
+  line-height: 21px;
+  text-align: center;
+}
