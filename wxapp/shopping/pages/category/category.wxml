@@ -1,0 +1,35 @@
+<!--page/category/category.wxml-->
+<!-- 总容器 -->
+<view class="main">
+
+    <!-- 左边名称栏   -->
+    <view class="left">
+        <scroll-view class="scroll" scroll-y>
+            <block wx:for="{{category}}" wx:key="index" >
+                <view  bindtap="scroll" data-id="{{item.id}}" class="scroll-cate">{{item.name}}</view>
+            </block>
+        </scroll-view>
+    </view>
+
+    <!-- 右边详情 -->
+    <view class="right">
+        <scroll-view class="content" scroll-y scroll-into-view="{{ intoindex }}" scroll-with-animation>
+            <block wx:for="{{detail}}" wx:key="index">
+                <view class="content-page" id="{{item.id}}">
+                    <image class="content-page-image" src="{{item.banner}}"/>
+                    <view class="content-page-title">
+                        <text class="">{{item.cate}}</text>
+                    </view>
+                    <block wx:for="{{item.detail}}" wx:key="index" wx:for-item="det">
+                        <view class="content-page-block">
+                            <image class="content-page-block-img" src="{{det.thumb}}"/>
+                            <view>
+                                <text>{{det.name}}</text>
+                            </view>
+                        </view>    
+                    </block> 
+                </view>        
+            </block>
+        </scroll-view>
+    </view>
+</view>
