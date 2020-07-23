@@ -50,6 +50,7 @@ Page({
     }
   },
 
+
   //计算总价格
   getTotalPrice() {
     //拿到carts数组中的每一条selected为true的数据，用数量乘以单价
@@ -64,6 +65,61 @@ Page({
       totalPrice: total.toFixed(2)
     })
   },
+
+
+
+  //增加购买数量
+  countAdd(e) {
+    const index = e.currentTarget.dataset.index
+    let carts = this.data.carts
+    let num = carts[index].num
+    num = num + 1 
+    carts[index].num = num
+    this.setData({
+      carts: carts
+    })
+    this.getTotalPrice()
+  },
+
+
+  //减少购买数量
+  countDown(e) {
+    const index = e.currentTarget.dataset.index
+    let carts = this.data.carts
+    let num = carts[index].num
+    if(num==1) {
+      carts[index].num=1
+    }
+    if(num > 1) {
+      num = num - 1
+      carts[index].num = num
+    }
+    this.setData({
+      carts: carts
+    })
+    this.getTotalPrice()
+  },
+
+
+  //删除所选商品
+  countDelete(e) {
+    const index = e.currentTarget.dataset.index
+    let carts = this.data.carts
+    carts.splice(index,1)
+    this.setData({
+      carts: carts
+    })
+    if(carts.length==0) {
+      this.setData({
+        selectAllStatus: false
+      })
+      this.getTotalPrice()
+    } else {
+      this.getTotalPrice()
+    }
+  },
+
+
 
   /**
    * 生命周期函数--监听页面加载
