@@ -1,0 +1,70 @@
+.container, .page {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.page_bd {
+    height: 100%;
+    background-color: #f5fafe;
+    overflow-y: auto;
+}
+.tab {
+    display: none;
+}
+.tab.show {
+    display: block;
+}
+.fruit-items {
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.fruit-item {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.item-con{
+    background-color: #fff;
+    text-align: center;
+  }
+
+
+
+.allbox {
+    width: 100%;
+    height: 100%;
+    background-color: #effafe;
+}
+.title {
+    width: 100%;
+    height: 40px; 
+    border-bottom: 1px solid #999999;
+    background-color: white;
+}
+.title text {
+    color: #000000;
+    display: block;
+    text-align: center;
+    line-height: 40px;
+    font-weight: 550;
+    font-size:15px ;
+}
+
+.weui-cell__bd text {
+    float: right;
+    position: absolute;
+    margin-left: 20px;
+    margin-top: -25px;
+    font-size: 15px;
+}
+.weui-cell:before{
+    display: none;
+}
+.weui-media-box:before {
+    display: none;
+}
