@@ -1,0 +1,11 @@
+<view class="starsbox">
+    <view wx:for="{{num}}">
+        <image class="starsbox-item" src="/assets/imgs/rating_star_small_on.png"/>
+    </view>
+    <view wx:for="{{halfstar}}">
+        <image class="starsbox-item" src="/assets/imgs/rating_star_small_half.png"/>
+    </view>
+    <view wx:for="{{blankstar}}">
+        <image class="starsbox-item" src="/assets/imgs/rating_star_small_off.png"/>  
+    </view>  
+</view>
