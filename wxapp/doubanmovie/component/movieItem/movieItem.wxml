@@ -1,0 +1,12 @@
+<!--component/movieItem/movieItem.wxml-->
+<view class="item">
+    <view class="info">
+        <image class="img" src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3437217665,1564280326&fm=26&gp=0.jpg"></image>
+        <view class="name">好看的电影你想不想看呢</view>
+        <view class="score-wrapper">
+            <!-- 星星 -->
+            <ratingStar score="4.5"></ratingStar>
+            <view class="score">9.0</view>
+        </view>
+    </view>
+</view>
