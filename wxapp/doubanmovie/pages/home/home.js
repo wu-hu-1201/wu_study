@@ -5,8 +5,35 @@ Page({
    * 页面的初始数据
    */
   data: {
-    inputShowed: false,
-    inputVal: ""
+    // inputShowed: false,
+    // inputVal: "",
+    allMovies: [
+      {
+        title: "院线热映",
+        url: "/v2/movie/in_theaters",
+        movies: []
+      },
+      {
+        title: "新片榜",
+        url: "/v2/movie/new_movies",
+        movies: []
+      },
+      {
+        title: "口碑榜",
+        url: "/v2/movie/weekly",
+        movies: []
+      },
+      {
+        title: "北美票房榜",
+        url: "/v2/movie/us_box",
+        movies: []
+      },
+      {
+        title: "Top250",
+        url: "/v2/movie/top250",
+        movies: []
+      },
+    ]
   },
 
   /**
@@ -20,19 +47,44 @@ Page({
     this.getCity((city) => {
       this.loadDate(0, { city: city, apikey: '0df993c66c0c636e29ecbb5344252a4a'})
     })
+    this.loadDate(1, { apikey: '0df993c66c0c636e29ecbb5344252a4a'})
+    this.loadDate(2, { apikey: '0df993c66c0c636e29ecbb5344252a4a'})
+    this.loadDate(3, { apikey: '0df993c66c0c636e29ecbb5344252a4a'})
+    this.loadDate(4, { apikey: '0df993c66c0c636e29ecbb5344252a4a'})
   },
 
   loadDate(idx, params) {
-    // console.log(params)
-    let url = wx.db.url('/v2/movie/in_theaters')
+    console.log(params)
+    let obj = this.data.allMovies[idx]
+    let url = wx.db.url(obj.url)
+    // let url = wx.db.url('/v2/movie/in_theaters')
     wx.request({
       url: url,
       data: params,
       header: {'content-type': 'json'},
       success: (res) => {
         console.log(res)
+        let movies = res.data.subjects  //拿到movies[]中的数据
+        // let obj = this.data.allMovies[idx] 
+        obj.movies = []
+        for(let index = 0;index < movies.length; index++) {
+          let element = movies[index]
+          let movie = element.subject || element
+
+          //格式化星星
+          this.updateMovie(movie)
+
+          obj.movies.push(movie)
+        }
+        this.setData(this.data)
       }
     })
+  },
+  updateMovie(movie) {
+    if (!movie.rating.stars) {
+      return
+    }
+    movie.numberStars = parseInt(movie.rating.stars)
   },
 
   getCity(succeed) {

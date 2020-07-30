@@ -1,2 +1,29 @@
-<!--pages/rank/rank.wxml-->
+<!-- pages/rank/rank.wxml -->
 <nav-bar title="榜单"></nav-bar>
+<view class="wrapper">
+    <view class="billboard-first">
+        <view class="billboard-title">
+            <text>2019年度电影榜单</text>
+            <view class="billboard-body">
+                <image class="first-pic" src="" />
+                <image class="second-pic" src="" />
+                <image class="third-pic" src="" />
+                <text>+218</text>
+            </view>
+        </view>
+    </view>
+    <view class="billboard-second">
+        <view class="billboard-title">
+            <text>一周口碑电影榜</text>
+            <view class="billboard-body">
+                <image class="first-pic" src="" />
+                <image class="second-pic" src="" />
+                <image class="third-pic" src="" />
+                <text>+10</text>
+            </view>
+        </view>
+    </view>
+    <view class="group" wx:for="{{}}" wx:key="">
+
+    </view>
+</view>

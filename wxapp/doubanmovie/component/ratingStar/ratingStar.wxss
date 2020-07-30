@@ -1,9 +1,13 @@
 /* component/ratingStar/ratingStar.wxss */
-.starsbox {
+/* .starsbox {
     display: flex;
     align-items: center;
   }
 .starsbox-item {
     width: 25rpx;
     height: 25rpx;
+} */
+
+.star-wrapper {
+  display: flex;
 }

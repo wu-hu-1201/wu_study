@@ -2,16 +2,17 @@
 <nav-bar title="首页" statusBarColor="#42bd55" navBarColor="#42bd55" titleColor="#fff"></nav-bar>
 <view>
     <mp-searchbar bindselectresult="selectResult" search="{{search}}"></mp-searchbar>
-    <view class="row">
+    <view class="row" wx:for="{{allMovies}}" wx:key="index">
         <view class="title-wrapper">
-            <view class="title">影院热映</view>
+            <view class="title">{{item.title}}</view>
             <view class="title-right">
                 <view class="more">查看更多</view>
                 <view class="arrow"></view>
             </view>
         </view>
         <scroll-view class="scroll-view_movie" scroll-x="{{true}}">
-            <movieItem class="item" movie="{{movie}}"></movieItem>
+        <!-- 组件：一部电影 -->
+            <movieItem class="item" wx:for="{{item.movies}}" wx:key="index" wx:for-item="movie" movie="{{movie}}"></movieItem>
         </scroll-view>
           
     </view>
