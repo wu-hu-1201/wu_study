@@ -3,27 +3,36 @@
 <view class="wrapper">
     <view class="billboard-first">
         <view class="billboard-title">
-            <text>2019年度电影榜单</text>
+            <text class="billboard-name">2019年度电影榜单</text>
             <view class="billboard-body">
-                <image class="first-pic" src="" />
-                <image class="second-pic" src="" />
-                <image class="third-pic" src="" />
-                <text>+218</text>
+                <image class="first-pic" src="https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2602595914.webp" />
+                <image class="second-pic" src="https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2608495324.webp" />
+                <image class="third-pic" src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2607219972.webp" />
+                <text class="billboard-number">+218</text>
             </view>
         </view>
     </view>
     <view class="billboard-second">
         <view class="billboard-title">
-            <text>一周口碑电影榜</text>
+            <text class="billboard-title-name">一周口碑电影榜</text>
             <view class="billboard-body">
-                <image class="first-pic" src="" />
-                <image class="second-pic" src="" />
-                <image class="third-pic" src="" />
-                <text>+10</text>
+                <image class="first-pic1" src="https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2591289975.webp" />
+                <image class="second-pic2" src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2603657253.webp" />
+                <image class="third-pic3" src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2611374103.webp" />
+                <text class="billboard-title-number">+10</text>
             </view>
         </view>
     </view>
-    <view class="group" wx:for="{{}}" wx:key="">
-
+    <view class="group">
+        <view class="moviebox" wx:for="{{detail}}" wx:key="index">
+            <image class="boardpic" src="{{item.image}}"/>
+            <view class="movietitlebox">
+                <block wx:for="{{item.movi}}" wx:key="index">
+                    <text class="movie-name">{{item.name}}</text>
+                    <text class="movie-grade">{{item.grade}}</text>
+                </block>
+                  
+            </view>
+        </view>
     </view>
 </view>

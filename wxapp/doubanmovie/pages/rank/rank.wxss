@@ -1,1 +1,108 @@
 /* pages/rank/rank.wxss */
+.wrapper {
+    width: 100%;
+    height: 100%;
+}
+.billboard-first {
+    width: 690rpx;
+    height: 300rpx;
+    margin: 0rpx 0 0 30rpx;
+    background-color: pink;
+    
+}
+.billboard-name {
+    font-size: 40rpx;
+    color: peru;
+    position: absolute;
+    margin-left: 40rpx;
+    margin-top: 30rpx;
+}
+.first-pic {
+    width: 100rpx;
+    height: 160rpx;
+    margin-left: 40rpx;
+    margin-top: 120rpx;
+}
+.second-pic {
+    width: 100rpx;
+    height: 160rpx;
+    margin-top: 120rpx;
+}
+.third-pic {
+    width: 100rpx;
+    height: 160rpx;
+    margin-top: 120rpx;
+}
+.billboard-number {
+    position: absolute;
+    margin-top: 160rpx;
+    margin-left: 30rpx;
+    font-size: 40rpx;
+    color: peru;
+}
+
+.billboard-second {
+    width: 690rpx;
+    height: 300rpx;
+    margin: 30rpx 0 0 30rpx;
+    background-color: slateblue;
+}
+.billboard-title-name{
+    font-size: 40rpx;
+    color: white;
+    position: absolute;
+    margin-left: 40rpx;
+    margin-top: 30rpx;
+}
+.first-pic1 {
+    width: 100rpx;
+    height: 160rpx;
+    margin-left: 40rpx;
+    margin-top: 120rpx;
+}
+.second-pic2 {
+    width: 100rpx;
+    height: 160rpx;
+    margin-top: 120rpx;
+}
+.third-pic3 {
+    width: 100rpx;
+    height: 160rpx;
+    margin-top: 120rpx;
+}
+.billboard-title-number {
+    position: absolute;
+    margin-top: 160rpx;
+    margin-left: 30rpx;
+    font-size: 40rpx;
+    color: #999999;
+}
+
+.moviebox{
+    width: 690rpx;
+    height: 160rpx;
+    margin: 20rpx 0 0 30rpx;
+}
+.boardpic {
+    width: 160rpx;
+    height: 160rpx;
+}
+.movietitlebox {
+    width: 530rpx;
+    height: 120rpx;
+    margin: 0rpx 20rpx 0 15rpx;
+    float: right;
+    position: absolute;
+    margin-top: -160rpx;
+    margin-left: 160rpx;
+    border-bottom: 1px solid #999999;
+    
+}
+.movie-name {
+    font-size: 25rpx;
+    
+}
+.movie-grade {
+    font-size: 25rpx;
+    color: orange;
+}
