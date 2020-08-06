@@ -3,7 +3,7 @@
 //     age: 20,
 //     sex: 'man'
 // }
-// obj.height = '175cm'   //---->添加数据
+// obj.height = '180cm'   //---->添加数据
 // const m = new Map()
 // console.log(m)   //--->Map {}
 //  m.set(obj,'content')
