@@ -40,11 +40,14 @@ Component({
   ready: function () {
     this.today()
   },
+  
+ 
 
   /**
    * 组件的方法列表
    */
   methods: {
+    
     today() {  //默认选中当天，并初始化组件
       let DATE = new Date(),
           year = DATE.getFullYear(),

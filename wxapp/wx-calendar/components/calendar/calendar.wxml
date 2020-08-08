@@ -16,9 +16,9 @@
         <!-- 上个月的格子 -->
         <view class="grid gray"wx:for="{{emptyGridsBefore}}" wx:key="index">{{item}}</view>
         <!-- 当月的格子 -->
-        <view class="grid"wx:for="{{thisMonthDays}}" wx:key="index">
+        <view class="grid" wx:for="{{thisMonthDays}}" wx:key="index">
             <view class="self"></view>
-                    <view class="wrap {{format === year + '-' + item.monthFormat + '-' + item.dateFormat ? 'select' : ''}}">{{item.date}}</view>
+                    <view class="wrap {{format === year + '-' + item.monthFormat + '-' + item.dateFormat ? 'select' : ''}}" >{{item.date}}</view>
         </view>
         <!-- 下个月的格子 -->
         <view class="grid gray" wx:for="{{emptyGridsAfter}}" wx:key="index">{{item}}</view>
