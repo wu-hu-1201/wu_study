@@ -109,7 +109,7 @@ Page({
     this.setData({
       carts: carts
     })
-    if(carts.length==0) {
+    if(!carts.length) {
       this.setData({
         selectAllStatus: false
       })
