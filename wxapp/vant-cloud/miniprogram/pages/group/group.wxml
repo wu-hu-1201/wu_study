@@ -1,15 +1,19 @@
-<!-- miniprogram/pages/group/group.wxml -->
-<view class="wrapper">
-    <view class="block"></view>
-        <view class="allgroup">
-            <view class="mine-group">
-                <image class="group-pic" src="https://677a-gzhiyi-154dd4-1256703754.tcb.qcloud.la/group3.png?sign=1119403c4109bbb505d07aa6d42ffdff&t=1545558495" />
-                <text class="group-title">我的群组</text>
-            </view>
-            <view class="group">
-                <van-cell-group>
-                    <van-cell title="单元格" icon="location-o" is-link />
-                </van-cell-group>
-            </view>
-        </view>
+<!--miniprogram/pages/group/group.wxml-->
+<view class="group-body">
+  <view class="public-list">
+    <view class="public-header">
+      <view class="public-icon">
+        <van-icon name="https://677a-gzhiyi-154dd4-1256703754.tcb.qcloud.la/group3.png?sign=1119403c4109bbb505d07aa6d42ffdff&t=1545558495" />
+      </view>
+      我的群组
+    </view>
+    <!-- 列表 -->
+    <view class="public-item" wx:for="{{groupList}}" wx:key="index">
+      <view class="public-item-name">{{item.name}}</view>
+      <view>
+        <image src="{{item.createBy.avatarUrl}}" class="creater"></image>
+        <van-icon name="arrow" style="color:#c6c6c6"/>
+      </view>
+    </view>
+  </view>
 </view>
