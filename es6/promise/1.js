@@ -1,6 +1,6 @@
 // js 是单线程的
 function a() {
-    console.log('wn')
+    console.log('wu')
 }
 
 function b() {

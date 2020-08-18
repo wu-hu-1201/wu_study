@@ -28,7 +28,7 @@ xq.then((res) => {
 function marry() {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
-            console.log('yl结婚了！')
+            console.log('yl结婚了')
             resolve('yl结婚顺利')
         }, 1000)
     })

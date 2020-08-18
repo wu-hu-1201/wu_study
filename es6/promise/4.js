@@ -25,7 +25,7 @@ function c() {
 function d() {
     setTimeout(() => {
         console.log('d')
-    }, 700)
+    }, 600)
 }
 
 // class Promise {
