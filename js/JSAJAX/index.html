@@ -56,7 +56,7 @@
             }
         }
     </script>
-    <script>
+    <!-- <script>
         function request(method, url, data, success) {
             var ajax = new XMLHttpRequest()
             if (method == 'get' || method == 'GET') {
@@ -78,22 +78,19 @@
                 } else {
                     ajax.send()
                 }
-                
-
-
-                // 注册时间
-                ajax.onreadystatechange = function() {
+            }
+            // 注册时间
+            ajax.onreadystatechange = function() {
                     if(ajax.readyState ==4 && ajax.status == 200) {
                     success(ajax.responseText)
                     }
                 }
-            }
         }
         request('get', 'http://neteasecloudmusicapi.zhaoboy.com/top/list','idx=1',success)
         function success(res) {
             console.log(res)
         }
-    </script>
+    </script> -->
 </body>
 </html>
 
