@@ -4,4 +4,4 @@
 
 
 <!-- 原始类型 -->
-boolean, number, string, void, null, undefined, symbol, bigint, （any）
+boolean, number, string, void, null, undefined, symbol, bigint, any(额外)
