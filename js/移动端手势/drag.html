@@ -30,7 +30,7 @@
         function handleMove(event) {
             let endX = event.clientX, endY = event.clientY;
             let diffX = endX - startX, diffY = endY - startY;
-            // 移动了 100px
+            // 移动了100px
             if (diffX ** 2 + diffY ** 2 > 10000) {
                 console.log('pan 发生了');
                 if (Math.abs(diffX) > Math.abs(diffY)) {
