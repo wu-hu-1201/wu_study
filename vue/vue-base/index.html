@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.bootcdn.net/ajax/libs/vue/2.6.12/vue.common.dev.js"></script>
     <title>Document</title>
+    <style>
+        .red{
+            color: red;
+        }
+        [v-cloak]{
+            display: none;
+        }
+    </style>
 </head>
 <body>
     <div id="app">
@@ -26,19 +34,47 @@
             <span v-html="newMessage"></span>
         </div> -->
 
-        <div class="count">
+        <!-- <div class="count">
             <p>{{count}}</p>
             <button v-on:click="add">+</button>
             <button @click="reduce">-</button>
-        </div>
+        </div> -->
+
+        <!-- <div class="model">
+            <p>{{message}}</p>
+            <p>
+                v-model:
+                <input type="text" v-model="message"/>
+            </p>
+        </div> -->
+
+        <!-- <div class="pic">
+            <img :src="imgSrc" alt="">
+        </div> -->
+
+        <!-- <div @click="change" v-bind:class="{red : changeColor}" :class="[className1, className2]">
+            蜗牛牛牛牛牛牛
+        </div> -->
+
+        <!-- <div v-pre>{{message}}</div> -->
+
+        <!-- <div c-cloak>{{message}}</div> -->
+
+        <!-- 一经渲染不得更改 -->
+        <div v-once>{{message}}</div>
+        <input type="text" v-model="message"/>
     </div>
 
     <script>
         var app = new Vue({
             el: '#app',
             data: {
+                className1: 'active',
+                className2: 'wrapper',
                 message: 'Hello World!',
+                changeColor: false,
                 newMessage: '<h2>Hello Vue!</h2>',
+                imgSrc: 'https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=789164515,2479748022&fm=11&gp=0.jpg',
                 isSure: false,
                 list: ['a', 'b', 'c', 'd'],
                 people: [
@@ -57,6 +93,10 @@
                 reduce() {
                     console.log('reduce')
                     this.count--
+                },
+                change() {
+                    console.log('change')
+                    this.changeColor= !this.changeColor
                 }
             },
 
