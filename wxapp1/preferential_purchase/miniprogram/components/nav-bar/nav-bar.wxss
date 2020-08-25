@@ -1,0 +1,24 @@
+/* components/nav-bar/nav-bar.wxss */
+.nav {
+    width: 100%;
+    height: 76rpx;
+    border-bottom: 1px solid #eaeaea;
+}
+.nav-body {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    margin: 30rpx 0rpx 0rpx 30rpx;
+    color:rgb(159,159,159);
+    font-size: 28rpx;
+    font-weight: 550;
+}
+.nav-on {
+    margin-right: 80rpx;
+}
+/* .nav-food {
+    font-size: 28rpx;
+    font-weight: 550;
+} */
+

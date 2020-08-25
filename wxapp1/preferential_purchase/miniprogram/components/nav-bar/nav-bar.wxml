@@ -1,0 +1,25 @@
+<!-- components/nav-bar/nav-bar.wxml -->
+<view class="nav">
+    <view class="nav-body">
+        <view class="nav-on  nav-food" bindtap="changeMine">
+            <navigator class="{{navId == 1 ? 'mineActive' : ''}}" url="../../pages/mine/mine">
+                美食分享
+            </navigator>
+        </view>
+        <view class="nav-on nav-play" bindtap="changeFind">
+            <navigator class="findWord" class="{{navId == 2 ? 'active' : ''}}" url="../../pages/find/find">
+                休闲娱乐
+            </navigator>
+        </view>
+        <view class="nav-on nav-movie" bindtap="changeCloud">
+            <navigator class="{{navId == 3 ? 'active' : ''}}" url="../../pages/cloud/cloud">
+                电影推荐
+            </navigator>
+        </view>
+        <view class="nav-tour" bindtap="changeVideo">
+            <navigator class="{{navId == 4 ? 'active' : ''}}" url="../../pages/video/video">
+                旅游攻略
+            </navigator>
+        </view>
+    </view>
+</view>
