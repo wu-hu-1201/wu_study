@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.bootcdn.net/ajax/libs/vue/2.6.12/vue.common.dev.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <ul>
+            <li v-for="(per,index) in person1" :key="index">{{per}}</li>
+        </ul>
+        <button onclick="add()">添加</button>
+    </div>
+    
+
+
+    <script>
+        var outData = {
+          person: [
+              { name: 'yl', age: 20, sex: 'man'},
+              { name: 'll', age: 21, sex: 'girl'},
+              { name: 'hh', age: 23, sex: 'boy'},
+          ],
+          person1: ['元隆', '浩楠', '祥祥']
+        }
+
+        
+        let app = new Vue({
+            el: '#app',
+            data: outData,
+            methods: {
+                
+            }
+            
+        })
+
+        function add() {
+           console.log('add')
+            // outData.person[0].name = 'mg'
+            // app.person[0].name = 'mg'
+            // app.person.push({name: 'zc', age: 23, sex: 'boy'})
+            Vue.set(app.person1, 2, "pp")
+        }
+    </script>
+</body>
+</html>
