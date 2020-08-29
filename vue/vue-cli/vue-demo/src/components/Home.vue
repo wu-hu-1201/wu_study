@@ -1,7 +1,7 @@
 <template>
   <div class="home">
       <p class="name">wn</p>
-      <p class="age">18</p>
+      <p class="age">20</p>
   </div>
 </template>
 
