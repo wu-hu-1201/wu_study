@@ -22,7 +22,7 @@ export default {
   },
   methods: {
     updateTitle(title) {
-      console.log('已接受来自子组件数据')
+      console.log('已经接受来自子组件数据')
       console.log(title)
       this.title = title
     }
