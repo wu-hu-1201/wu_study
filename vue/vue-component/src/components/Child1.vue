@@ -10,7 +10,7 @@ import bus from '@/utils/bus.js'
 export default {
     data() {
         return {
-            msg: '我是Child1里面的数据'
+            msg: '我是来自Child1里面的数据'
         }
     },
     methods: {
