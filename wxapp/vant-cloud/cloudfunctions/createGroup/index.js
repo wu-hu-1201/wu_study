@@ -1,6 +1,6 @@
 // 云函数入口文件
 const cloud = require('wx-server-sdk')
-const env = 'wu-haibing-c2elw'
+const env = 'wu-haibing-c2elw'  //指明当前要使用的环境下的服务器
 
 cloud.init()
 const db = cloud.database({ env })  //连接当前这个数据库

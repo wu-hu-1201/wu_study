@@ -19,7 +19,7 @@
      tab  使用缩进
    npm i -g stylus
    stylus common.styl -o common.css
-   边写边编译？---S
+   边写边编译？---stylus -w common.styl -o common.css
    复盘
    css 写的有点OK，上升到预编辑 stylus
    命令行能力
