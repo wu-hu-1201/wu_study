@@ -1,0 +1,40 @@
+<!--miniprogram/pages/community/community.wxml-->
+<nav-bar></nav-bar>
+<view class="community">
+    <view class="welfare">
+        <text class="welfare-title">福利专栏</text>
+        <text class="welfare-update-time">每周一更新</text>
+        <scroll-view class="welfareAll" scroll-x>
+            <block wx:for="{{}}" wx:key="index">
+                <view class="welfare-box">
+                    <image  class="welfare-img" src="{{}}"/>
+                    <text class="welfare-des">{{}}</text>
+                </view>
+            </block>   
+        </scroll-view>
+    </view>
+
+    <view class="group">
+        <text class="group-title">福利专栏</text>
+        <text class="group-update-time">每周一更新</text>
+        <scroll-view class="groupAll" scroll-x>
+            <block wx:for="{{}}" wx:key="index">
+                <view class="group-box">
+                    <image  class="group-img" src="{{}}"/>
+                    <text class="group-timeList">倒计时</text>
+                    <image  class="group-buyCar" src="{{}}"/>
+                    <text class="group-time">00:22:30</text>
+                    <text class="group-buy">一起凑单</text>
+                </view>
+            </block> 
+        </scroll-view>
+    </view>
+
+    <view class="talk">
+        <view class="talk-title">美食点评</view>
+        <view class="add-talk">
+            <text class="add" bindtap="addTalk">+</text>
+            <text class="add-mineTalk">发布我的点评</text>
+        </view>
+    </view>
+</view>
