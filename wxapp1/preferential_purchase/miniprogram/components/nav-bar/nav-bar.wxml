@@ -1,7 +1,7 @@
 <!-- components/nav-bar/nav-bar.wxml -->
 <view class="nav">
     <view class="nav-body">
-        <view class="nav-on  nav-food" bindtap="changeMine">
+        <view class="nav-on  nav-food" bindtap="changeFood">
             <navigator class="{{navId == 1 ? 'mineActive' : ''}}" url="../../pages/mine/mine">
                 美食分享
             </navigator>
