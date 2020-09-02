@@ -4,7 +4,7 @@ let data = [
     {value: '好听！好听！好听！', time : 15},
     {value: '周杰伦！听妈妈的话！', time : 20, color: 'yellow', speed: 1, fontSize: 35},
     {value: '听妈妈的话！', time : 25, color: 'yellow', speed: 1, fontSize: 35},
-    {value: '要好好听妈妈的话哦！', time : 30, color: '#eaeaea', speed: 1, fontSize: 25},
+    {value: '要好好听妈妈的话！', time : 30, color: '#eaeaea', speed: 1, fontSize: 25},
     {value: '还是这么好听！', time : 40, color: 'blue', speed: 1, fontSize: 40}
 ]
 
