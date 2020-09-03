@@ -6,7 +6,7 @@
                 美食分享
             </navigator>
         </view>
-        <view class="nav-on nav-play" bindtap="changeFind">
+        <view class="nav-on nav-play" bindtap="changePlay">
             <navigator class="findWord" class="{{navId == 2 ? 'active' : ''}}" url="../../pages/find/find">
                 休闲娱乐
             </navigator>
