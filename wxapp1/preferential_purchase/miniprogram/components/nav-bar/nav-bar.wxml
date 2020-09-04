@@ -11,7 +11,7 @@
                 休闲娱乐
             </navigator>
         </view>
-        <view class="nav-on nav-movie" bindtap="changeCloud">
+        <view class="nav-on nav-movie" bindtap="changeMovie">
             <navigator class="{{navId == 3 ? 'active' : ''}}" url="../../pages/cloud/cloud">
                 电影推荐
             </navigator>
