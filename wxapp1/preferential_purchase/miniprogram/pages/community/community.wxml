@@ -23,7 +23,7 @@
                     <image  class="group-img" src="{{}}"/>
                     <text class="group-timeList">倒计时</text>
                     <image  class="group-buyCar" src="{{}}"/>
-                    <text class="group-time">00:22:20</text>
+                    <text class="group-time">00:22:40</text>
                     <text class="group-buy">一起凑单</text>
                 </view>
             </block> 
