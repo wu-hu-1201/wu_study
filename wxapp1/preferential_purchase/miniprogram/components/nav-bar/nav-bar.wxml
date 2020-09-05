@@ -16,7 +16,7 @@
                 电影推荐
             </navigator>
         </view>
-        <view class="nav-tour" bindtap="changeVideo">
+        <view class="nav-tour" bindtap="changeTour">
             <navigator class="{{navId == 4 ? 'active' : ''}}" url="../../pages/video/video">
                 旅游攻略
             </navigator>
