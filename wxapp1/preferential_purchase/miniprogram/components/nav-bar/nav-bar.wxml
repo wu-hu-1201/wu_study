@@ -2,7 +2,7 @@
 <view class="nav">
     <view class="nav-body">
         <view class="nav-on  nav-food" bindtap="changeFood">
-            <navigator class="{{navId == 1 ? 'mineActive' : ''}}" url="../../pages/mine/mine">
+            <navigator class="{{navId == 1 ? 'foodActive' : ''}}" url="../../pages/mine/mine">
                 美食分享
             </navigator>
         </view>
