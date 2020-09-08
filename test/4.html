@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>鱼</title>
+    <style>
+    .fish {
+        width: 200px;
+        height: 200px;
+        background: url('../../js_fullstudy/test/images/fish.jpg') 0px 0px no-repeat;
+        animation: shark 1s infinite steps(11) , swim 20s linear infinite;
+    }
+    /* 摆动身体 */
+    @keyframes shark {
+        100% {
+            background-position: 0px -1386px;
+        }
+    }
+    /* 游动 */
+    @keyframes swim {
+        30% {
+            transform: translate(1000px,0) rotate(0deg);
+        }
+        50% {
+            transform: translate(1000px,0) rotate(180deg);
+        }
+        80% {
+            transform: translate(0,0) rotate(180deg);
+        }
+ 
+    }
+    </style>
+</head>
+<body>
+    <!-- 因为鱼是长图,实现的原理是在div盒子内不断切换Y轴坐标实现鱼'动'起来 -->
+    <div class="fish"></div>
+    <div class="fish"></div>
+</body>
+</html>
