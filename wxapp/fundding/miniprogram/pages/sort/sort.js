@@ -184,7 +184,7 @@ Page({
 
   //获取input文本并且实时搜索
   getSearchKey: function (e) {
-    console.log(e.detail)
+    console.log(e)
     // if(e.detail.cursor === 0){
     //   this.setData({
     //     showSongResult: false

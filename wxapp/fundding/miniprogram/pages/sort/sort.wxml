@@ -6,8 +6,11 @@
             <view class="weui-search-bar__form">
                 <view class="weui-search-bar__box" bindtap="show">
                     <icon class="weui-icon-search_in-box" type="search" size="14" color='#eeeeee'></icon>
-                    <input focus='true' type="text" class="weui-search-bar__input" placeholder="请输入物品关键词" placeholder-style="color:#eeeeee" value='{{inputValue}}' bindinput="getsearchKey" bindblur="routeSearchResPage" bindconfirm="searchover" />
-                    <!-- 点击×可以清空正在输入 -->
+                    <input focus='true' type="text" class="weui-search-bar__input" 
+                        placeholder="请输入物品关键词" placeholder-style="color:#eeeeee" 
+                        value='{{inputValue}}' bindinput="getsearchKey" 
+                        bindblur="routeSearchResPage" bindconfirm="searchover"/>
+                    <!-- 点击×清空正在输入 -->
                     <view class="{{showClean? 'hide': 'weui-icon-clear'}}">
                         <icon type="clear" size="14" color='#999999' bindtap="clearInput"></icon>
                     </view>
