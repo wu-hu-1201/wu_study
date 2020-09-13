@@ -1,5 +1,4 @@
 <!--components/thingItem/thingItem.wxml-->
-<!--component/movieItem/movieItem.wxml-->
 <view class="item">
     <view class="info">
         <image class="img" src="{{des.pic}}"></image>
