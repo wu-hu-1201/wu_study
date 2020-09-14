@@ -1,0 +1,252 @@
+[
+    {
+        "title": "肖申克的救赎 / The Shawshank Redemption",
+        "star": "9.7",
+        "pic": {
+            "width": "100",
+            "alt": "肖申克的救赎",
+            "src": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p480747492.jpg",
+            "class": ""
+        }
+    },
+    {
+        "title": "霸王别姬",
+        "star": "9.6",
+        "pic": {
+            "width": "100",
+            "alt": "霸王别姬",
+            "src": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2561716440.jpg",
+            "class": ""
+        }
+    },
+    {
+        "title": "阿甘正传 / Forrest Gump",
+        "star": "9.5",
+        "pic": {
+            "width": "100",
+            "alt": "阿甘正传",
+            "src": "https://img2.doubanio.com/view/photo/s_ratio_poster/public/p2372307693.jpg",
+            "class": ""
+        }
+    },
+    {
+        "title": "这个杀手不太冷 / Léon",
+        "star": "9.4",
+        "pic": {
+            "width": "100",
+            "alt": "这个杀手不太冷",
+            "src": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p511118051.jpg",
+            "class": ""
+        }
+    },
+    {
+        "title": "泰坦尼克号 / Titanic",
+        "star": "9.4",
+        "pic": {
+            "width": "100",
+            "alt": "泰坦尼克号",
+            "src": "https://img9.doubanio.com/view/photo/s_ratio_poster/public/p457760035.jpg",
+            "class": ""
+        }
+    },
+    {
+        "title": "美丽人生 / La vita è bella",
+        "star": "9.5",
+        "pic": {
+            "width": "100",
+            "alt": "美丽人生",
+            "src": "https://img2.doubanio.com/view/photo/s_ratio_poster/public/p2578474613.jpg",
+            "class": ""
+        }
+    },
+    {
+        "title": "千与千寻 / 千と千尋の神隠し",
+        "star": "9.4",
+        "pic": {
+            "width": "100",
+            "alt": "千与千寻",
+            "src": "https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2557573348.jpg",
+            "class": ""
+        }
+    },
+    {
+        "title": "辛德勒的名单 / Schindler's List",
+        "star": "9.5",
+        "pic": {
+            "width": "100",
+            "alt": "辛德勒的名单",
+            "src": "https://img2.doubanio.com/view/photo/s_ratio_poster/public/p492406163.jpg",
+            "class": ""
+        }
+    },
+    {
+        "title": "盗梦空间 / Inception",
+        "star": "9.3",
+        "pic": {
+            "width": "100",
+            "alt": "盗梦空间",
+            "src": "https://img2.doubanio.com/view/photo/s_ratio_poster/public/p2616355133.jpg",
+            "class": ""
+        }
+    },
+    {
+        "title": "忠犬八公的故事 / Hachi: A Dog's Tale",
+        "star": "9.4",
+        "pic": {
+            "width": "100",
+            "alt": "忠犬八公的故事",
+            "src": "https://img1.doubanio.com/view/photo/s_ratio_poster/public/p524964039.jpg",
+            "class": ""
+        }
+    },
+    {
+        "title": "海上钢琴师 / La leggenda del pianista sull'oceano",
+        "star": "9.3",
+        "pic": {
+            "width": "100",
+            "alt": "海上钢琴师",
+            "src": "https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2574551676.jpg",
+            "class": ""
+        }
+    },
+    {
+        "title": "星际穿越 / Interstellar",
+        "star": "9.3",
+        "pic": {
+            "width": "100",
+            "alt": "星际穿越",
+            "src": "https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2614988097.jpg",
+            "class": ""
+        }
+    },
+    {
+        "title": "楚门的世界 / The Truman Show",
+        "star": "9.3",
+        "pic": {
+            "width": "100",
+            "alt": "楚门的世界",
+            "src": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p479682972.jpg",
+            "class": ""
+        }
+    },
+    {
+        "title": "三傻大闹宝莱坞 / 3 Idiots",
+        "star": "9.2",
+        "pic": {
+            "width": "100",
+            "alt": "三傻大闹宝莱坞",
+            "src": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p579729551.jpg",
+            "class": ""
+        }
+    },
+    {
+        "title": "机器人总动员 / WALL·E",
+        "star": "9.3",
+        "pic": {
+            "width": "100",
+            "alt": "机器人总动员",
+            "src": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p1461851991.jpg",
+            "class": ""
+        }
+    },
+    {
+        "title": "放牛班的春天 / Les choristes",
+        "star": "9.3",
+        "pic": {
+            "width": "100",
+            "alt": "放牛班的春天",
+            "src": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p1910824951.jpg",
+            "class": ""
+        }
+    },
+    {
+        "title": "大话西游之大圣娶亲 / 西遊記大結局之仙履奇緣",
+        "star": "9.2",
+        "pic": {
+            "width": "100",
+            "alt": "大话西游之大圣娶亲",
+            "src": "https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2455050536.jpg",
+            "class": ""
+        }
+    },
+    {
+        "title": "熔炉 / 도가니",
+        "star": "9.3",
+        "pic": {
+            "width": "100",
+            "alt": "熔炉",
+            "src": "https://img9.doubanio.com/view/photo/s_ratio_poster/public/p1363250216.jpg",
+            "class": ""
+        }
+    },
+    {
+        "title": "疯狂动物城 / Zootopia",
+        "star": "9.2",
+        "pic": {
+            "width": "100",
+            "alt": "疯狂动物城",
+            "src": "https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2614500649.jpg",
+            "class": ""
+        }
+    },
+    {
+        "title": "无间道 / 無間道",
+        "star": "9.2",
+        "pic": {
+            "width": "100",
+            "alt": "无间道",
+            "src": "https://img2.doubanio.com/view/photo/s_ratio_poster/public/p2564556863.jpg",
+            "class": ""
+        }
+    },
+    {
+        "title": "龙猫 / となりのトトロ",
+        "star": "9.2",
+        "pic": {
+            "width": "100",
+            "alt": "龙猫",
+            "src": "https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2540924496.jpg",
+            "class": ""
+        }
+    },
+    {
+        "title": "教父 / The Godfather",
+        "star": "9.3",
+        "pic": {
+            "width": "100",
+            "alt": "教父",
+            "src": "https://img9.doubanio.com/view/photo/s_ratio_poster/public/p616779645.jpg",
+            "class": ""
+        }
+    },
+    {
+        "title": "当幸福来敲门 / The Pursuit of Happyness",
+        "star": "9.1",
+        "pic": {
+            "width": "100",
+            "alt": "当幸福来敲门",
+            "src": "https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2614359276.jpg",
+            "class": ""
+        }
+    },
+    {
+        "title": "怦然心动 / Flipped",
+        "star": "9.1",
+        "pic": {
+            "width": "100",
+            "alt": "怦然心动",
+            "src": "https://img1.doubanio.com/view/photo/s_ratio_poster/public/p501177648.jpg",
+            "class": ""
+        }
+    },
+    {
+        "title": "触不可及 / Intouchables",
+        "star": "9.2",
+        "pic": {
+            "width": "100",
+            "alt": "触不可及",
+            "src": "https://img9.doubanio.com/view/photo/s_ratio_poster/public/p1454261925.jpg",
+            "class": ""
+        }
+    }
+]
