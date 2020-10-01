@@ -47,13 +47,14 @@ export default {
                     type: 'success'
                 });
                 // 路由跳转
+                localStorage.setItem('name', this.user)      
                 this.$router.push({
                     path: '/home',
                     query: {
-                        user: this.user   
+                        name: this.user   
                     },
                 })
-                console.log(this.user)
+                 
             }
         }
     }

@@ -6,7 +6,7 @@
         <div class="user-control">
           <el-dropdown @command="handleCommand">
             <span class="el-dropdown-link">
-              {{$route.query.user}}
+              {{name}}
               <i class="el-icon-arrow-down el-icon--right"></i>
             </span>
             <el-dropdown-menu slot="dropdown">
@@ -58,8 +58,11 @@
 export default {
   data() {
     return {
-      user:''
+      name:''
     }
+  },
+  created(){
+    this.name =  localStorage.getItem('name')
   },
   methods: {
     handleCommand(command) {
@@ -68,10 +71,10 @@ export default {
         this.$router.push({ path: "/" });
       }
     },
-    created() {
-      // this.user = this.$route.query.user
-      console.log(this.user);
-    }
+    // created() {
+    //   // this.user = this.$route.query.user
+    //   console.log(this.user);
+    // }
   }
 }
 </script>
