@@ -37,7 +37,7 @@ router.get('/a.js', async function(ctx) {
     // ctx.set('last-modified', '文件修改时间')
     // 大文件的时候 hash  耗时比较久 取修改时间
     // 强缓存优先生效
-    // 30秒之后请求就会来到服务器  顺便 用if-none-match 把上一次的etag 带回来
+    // 30秒之后请求就会来到服务器  顺便 用if-none-match 把上一次的etag带回来
     ctx.body = js
 })
 app
