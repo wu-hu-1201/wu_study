@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #el {
+            transition: all .5s;
+        }
+    </style>
+</head>
+<body>
+    <div id="el">123</div>
+    <script>
+        const el = document.querySelector('#el')
+        const divNode = document.createElement('div');
+        divNode.style.width = '20px';
+        divNode.style.height = '20px';
+        divNode.style.backgroundColor = 'red';
+        let img = new Image();
+        img.src = 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1999921673,816131569&fm=26&gp=0.jpg';
+        let prePosition = el.getBoundingClientRect()
+        setTimeout(() => {
+            document.body.insertBefore(img, el);
+            let currentPosition = el.getBoundingClientRect(); // left top
+            // document.body.insertBefore(divNode, el);
+            // FLIP  反转 first last invert play
+            // el.style.transform = 'translateY(-20px)';
+            // el.style.transform =  'translateY(0px)';
+            // keyFrame
+            let keyFrame = [
+                {
+                    // transform: 'translateY(-20px)'
+                    transform: `translateY(${prePosition.tp - currentPosition.top}px)`
+                },
+                {
+                    transform: 'translateY(0px)'
+                }
+            ];
+            el.animate(keyFrame, {
+                duration: 3000,
+                easing: 'ease-in-out'
+            })
+        }, 3000)
+    </script>
+</body>
+</html>
