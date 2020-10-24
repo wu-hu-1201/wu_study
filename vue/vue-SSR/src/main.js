@@ -1,0 +1,15 @@
+import Vue from 'vue'
+import App from './App.vue'
+import { createRouter } from './routes/index.js'
+
+// 导出一个工厂函数
+export function createApp() {
+    const router = createRouter()
+
+    const app = new  Vue({
+        router,
+        render: h => h(App)  // 将App.vue拿来编译
+    })
+    return { app, router }
+}
+
