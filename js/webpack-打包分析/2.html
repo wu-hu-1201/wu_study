@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="module">
+        setTimeout(() => {
+            // import('./src/index.js')
+            // .then(m => {
+            //     console.log(m)
+            // })
+            // 懒加载
+            let scriptNode = document.createElement('script')
+            scriptNode.src = 'xxx.js'
+            document.body.appendChild(scriptNode)
+        }, 2000)
+        function myImport() {
+            return new Promise(() => {
+                // 动态构造数据标签
+            })
+        }
+    </script>
+</body>
+</html>
