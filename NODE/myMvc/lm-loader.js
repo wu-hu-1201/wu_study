@@ -33,7 +33,11 @@ function initRouter(app) {
 
       // 注册路由
       // router.get('/', ctx => {})
-      router[method](path === '/' ? prefix : prefix + path, routes[key])
+      // router[method](path === '/' ? prefix : prefix + path, routes[key])
+      router[method](path === '/' ? prefix : prefix + path, async ctx => { 
+        app.ctx = ctx
+        await routes[key](app)
+      })
     })
   })
   return router
@@ -49,7 +53,26 @@ function initController(app) {
 }
 
 
-module.exports = { initRouter, initController }
+function initService() {
+  const services = {}
+  load('service', (filename, service) => {
+    services[filename] = service
+  })
+  return services
+}
+
+
+// 让数据库连接部分的代码生效
+const Sequelize = require('sequelize')
+function loadConfig(app) {
+  load('config', (filename, conf) => {
+    if (conf.db) {
+      app.$db = new Sequelize(conf.db)
+    }
+  })
+}
+
+module.exports = { initRouter, initController, initService, loadConfig }
 
 // load('routes', (filename) => {
 //   console.log('routes:' + filename);
