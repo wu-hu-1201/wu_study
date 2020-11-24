@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="/c" id="btn">/c</a>
+    <script>
+        // 通过拦截pushState/replaceState的调用和a标签的点击事件来检测url变化
+        const originPushState = window.history.pushState
+        window.history.pushState = function() {
+            console.log('url变了')
+            originPushState.apply(this, [...arguments])
+        }
+
+        
+        const btn = document.getElementById('btn')
+        btn.addEventListener('click', (e) => {
+            console.log(1)
+            window.history.pushState('/c', {}, '/c')
+            e.preventDefault()
+        })
+        window.addEventListener('popstate', () => {  // 只能监听前进和后退的路由变化
+            console.log('页面发生变化', window.location)
+        })
+        
+        // const originPush = Array.prototype.push
+        // Array.prototype.push = function() {
+        //     console.log('数组发生')
+        //     originPush.call(this)
+        // }
+    </script>
+</body>
+</html>
