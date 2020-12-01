@@ -26,3 +26,8 @@
 
 # 什么是 Service Worker    (例子：Service-worker.js)
 运行在浏览器背后的独立线程，一般用来实现缓存的功能，传输协议必须是HTTPS
+
+
+
+
+
