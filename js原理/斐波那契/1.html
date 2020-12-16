@@ -1,0 +1,35 @@
+<script>
+    // 递归
+    // 动态规划
+    // function fib(n) {
+    //     if (n <= 1) {
+    //        return n
+    //     }
+    //     return fib(n-1) + fib(n-2)
+    // }
+    // console.log(fib(6))
+
+    function fib(n) {
+        let res = [0n, 1n]
+        for (let i = 2; i < n; i++) {
+            res[i] = res[i-1] + res[i-2]
+        }
+        return res[n - 1]
+    }
+    console.log(fib(10000))
+
+
+    let arr = [1, [2, [3, [4]]], 5]
+    function flat(a) {
+        let stack = [...a], res = []
+        while (stack.length) {
+            let item = stack.pop();
+            if (Array.isArray(item)) {
+                res.push(...item)
+            } else {
+                res.unshift(item)
+            }
+        }
+        return res
+    }
+</script>
