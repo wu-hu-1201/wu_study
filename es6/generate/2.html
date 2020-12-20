@@ -1,0 +1,61 @@
+<!--CSS-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            height: 300px;
+        }
+
+        .wrapper {
+            display: flex;
+            /* flex: 1; */
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
+
+        .item {
+            /* flex: 1;*/
+            outline: 1px solid red; 
+            width: 33.33333333vw;
+            /* height: 33.33333333vw; */
+            height: 0;
+            padding-top: 33.33333333vw;
+            /* padding-top 百分比相对宽度来计算 */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>
+        <div class="wrapper">
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>
+        <div class="wrapper">
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>
+    </div>
+</body>
+
+</html>
