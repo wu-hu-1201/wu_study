@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .float {
+            float: left;
+        }
+        .box {
+            width: 100px;
+            border: 1px solid #ededed;
+        }
+        .box div {
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="float">float</div>
+        <div>撒旦撒旦三大撒肯定撒卡的年卡都能看到看</div>
+    </div>
+    <div id="domA"></div>
+    <div id="domB"></div>
+    <div id="domC"></div>
+    <script>
+        // float: word 环绕
+        // 清除浮动 over-flow: hidden
+        // clear: both;  + div
+        const DomA = document.getElementById('domA')
+        const DomB = document.getElementById('domB')
+        const DomC = document.getElementById('domC')
+        function timer() {
+            DomA.style.width = DomA.offsetWidth + 1 + 'px'
+            DomB.style.width = DomA.offsetWidth + 1 + 'px'
+            DomC.style.width = DomA.offsetWidth + 1 + 'px'
+        }
+        setTimeout(() => {
+            timer()
+        }, 1000);
+    </script>
+</body>
+</html>
