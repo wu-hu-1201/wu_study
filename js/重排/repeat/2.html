@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /* repeat 实现，使用JS实现一个repeat方法，
+ 调用这个 repeatedFunc("helloWorld")，
+ 会alert4次 helloWorld, 每次间隔3秒
+ function repeat(func, times, wait) {
+  
+    }
+    const repeatFunc = repeat(alert, 4, 3000)
+    repeatedFunc("hellworld")
+ */
+
+        // 函数是一等公民： 函数和其他类型(bool, string, number)一样
+        // 都可以函数参数传递也可以作用函数的返回值返回
+        function repeat(func, times, wait) {
+            return (args) => {
+                for (let i = 0; i < times; i++) {
+                    setTimeout(() => {
+                        // alert('helloWorld')
+                        func(args)
+                    }, wait * i)
+                }
+            }
+        }
+        const repeatFunc = repeat(alert, 4, 3000)
+        repeatFunc("helloWorld")
+    </script>
+</body>
+
+</html>
