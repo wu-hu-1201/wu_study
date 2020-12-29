@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        遍历
+        每一项操作一下
+        返回新的数组
+        let arr = this
+        this => a  this === a  === [1, 2, 3]
+        */
+        Array.prototype.map = function(func) {
+            let arr = this
+            let newArr = []
+            for (let i = 0; i < arr; i++) {
+                let num = arr[i]
+                newArr.push(func(num, i, arr))
+            }
+            return newArr
+        }
+        let a = [1, 2, 3]
+        let s = a.map(x => x + 1)
+    </script>
+</body>
+</html>
