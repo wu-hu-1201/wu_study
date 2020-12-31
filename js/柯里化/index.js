@@ -20,7 +20,7 @@ let _sum = curry(sum)
 
 let A = _SUM(1)
 let B = A(2)
-B(3)  // 6
+B(3) // 6
 
 
 function fn(a, b, c, d, e) {
