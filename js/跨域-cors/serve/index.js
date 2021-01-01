@@ -4,7 +4,7 @@ const path = require('path');
 const router = require('koa-router')();
 
 app.use(async (ctx, next) => {
-  // 允许哪个域名请求 *
+  // 允许哪个域名请求*
   ctx.set('Access-Control-Allow-Origin', 'http://127.0.0.1:5500');
   // 服务器支持的头部 x-custom
   ctx.set('Access-Control-Allow-Headers', 'x-custom,content-type');
