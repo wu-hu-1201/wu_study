@@ -30,7 +30,7 @@
             }
             this.listener[name].push({
                 cb: cb,
-                once: true  // 执行完就将它删掉了
+                once: true  // 执行完就将它删掉
             })
         }
         off(name, cb) {}  // 解绑
