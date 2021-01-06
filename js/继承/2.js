@@ -3,7 +3,7 @@ var p1 = new Person()
 
 console.log(p1.constructor)  // [Function: Person]
 Person.prototype = {
-    name: '小花'
+    name: '小'
 }
 
 var p2 = new Person()
