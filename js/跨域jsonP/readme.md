@@ -1,7 +1,7 @@
 浏览器得安全策略
 
 端口 域名 协议：   不同 就有跨域
-baidu.com   api.baidu.com
+baidu.com      api.baidu.com
 
 
 ## cors
