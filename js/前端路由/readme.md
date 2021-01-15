@@ -20,7 +20,7 @@ history
 提供了 pushState 和 replaceState 两个方法，这两个方法改变url的path部分
 不会引起页面刷新
 
-通过 popstate 事件监听 url 变化
+通过 popstate 事件监听   url 变化
 
 - 通过历览器前进后退来改变url
 - 通过pushState/replaceState或者a标签改变url回触发popstate事件
