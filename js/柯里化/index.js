@@ -32,7 +32,7 @@ _fn(1, 2, 3, 4, 5)  // 1, 2, 3, 4, 5
 
 
 
-// 降低函数的通用性，提高函数的适用性
+// 降低函数的通用性以提高函数的适用性
 function checkByRegExp(regExp, string) {
     return regExp.test(string)
 }
