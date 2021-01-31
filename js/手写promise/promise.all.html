@@ -17,7 +17,7 @@
         return new Promise((resolve, reject) => {
             let res = [], count = 0
             for (let i = 0; i < promiseArr.length; i++) {
-                // i原来在数组里面的顺序
+                // i原在数组里面的顺序
                 promiseArr[i].then(() => {
                     // 最终成功的时候顺序
                     res[i] = r
