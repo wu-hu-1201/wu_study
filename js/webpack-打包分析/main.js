@@ -12,7 +12,7 @@
         installModules[id] = exports
         // module.exports === exports 指向了一个对象
         modules[id](module, exports, webpack_require)
-        // module.exports.add = xxx  别人把add方法加到{}
+        // module.exports.add = xxx  他人把add方法加到{}
         return exports
     }
     webpack_require('./index.js')
