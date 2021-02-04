@@ -5,7 +5,7 @@
 
 // function speak(context) {
 //     let greeting = "Hello, I'm" + identify(context)
-//     console.log(greeting)    //--->Hello, I'mME
+//     console.log(greeting)    //-->Hello, I'mME
 // }
 
 // speak('me')
