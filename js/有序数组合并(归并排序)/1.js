@@ -7,11 +7,11 @@ function merge(arr1, arr2) {
             arr.push(arr1.shift())
         }
         while (arr2[0] <= arr1[0]) {
-            // 将更大的那个数弹出
+            // 将更大那个数弹出
             arr.push(arr2.shift())
         }
     }
-    // 当有一个数组被排完了，跳出循环，合并两个数组并解构
+    // 当有一个数组被排完了，跳出循环， 合并两个数组并解构
     //(此时一个数组为空，也就是直接将还有剩下的那个数组直接 push到新的数组)
     arr.push(...arr1.concat(arr2))
     return arr
