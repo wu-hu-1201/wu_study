@@ -42,7 +42,7 @@ console.log(keyBack("wn", 18)); // wn18了
 // 可索引的类型 有个 索引签名
 interface arrType {
   [index: number]: string;
-} // 当用 number去索引myType时会得到string类型的返回值。
+} // 当用 number去索引 myType 时会得到string 类型的返回值。
 let arrss: arrType = ["123", "1", "21"];
 
 interface objType {
