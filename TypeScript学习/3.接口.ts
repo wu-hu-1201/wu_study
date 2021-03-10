@@ -18,7 +18,7 @@ function Fn(config: typeStyle): { name: string; length: number } {
 Fn({ name: "ww" });
 // 可选属性的好处之一是可以对可能存在的属性进行预定义，好处之二是可以捕获引用了不存在的属性时的错误
 
-// 只读属性readonly,赋值后不能改变
+// 只读属性readonly 赋值后不能改变
 interface Point {
   readonly x: number;
   readonly y: number;
