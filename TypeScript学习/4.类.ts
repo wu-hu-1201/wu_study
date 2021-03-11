@@ -55,7 +55,7 @@ class Person {
   // public 在当前类、子类和类以外都可以访问
   // protected 在当前类、子类内部都可以访问，类外部无法访问
   // private 在当前类内部可以访问，子类和类外部无法访问
-  // 属性不加修饰符，默认都是public
+  // 属性不加修饰符，默认都是 public
   
   // 例子三： 多态
   abstract class Cat {
