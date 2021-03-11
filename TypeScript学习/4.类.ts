@@ -30,7 +30,7 @@ class Person {
       console.log("可爱的dog");
     }
   }
-  // Dog继承了 Animal的功能，因此我们可以创建一个 Dog的实例，它能够 walk() 和 move()。
+  // Dog继承了 Animal的功能，因此我们可以创建一个 Dog的实例，它能够 walk() 和 move()
   const dog = new Dog();
   dog.walk();
   dog.move(5);
