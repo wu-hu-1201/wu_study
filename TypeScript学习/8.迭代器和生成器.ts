@@ -4,7 +4,7 @@
 // 对象上的 Symbol.iterator函数负责返回供迭代的值。
 
 // for ... of ...
-// for..of会遍历可迭代的对象，调用对象上的Symbol.iterator方法。
+// for..of会遍历可迭代的对象，调用对象上的Symbol.iterator方法
 let someArray = [1, "string", false];
 for (let entry of someArray) {
   console.log(entry); // 1, "string", false
@@ -12,7 +12,7 @@ for (let entry of someArray) {
 
 // for..of.. 与 for..in..
 // for..of和for..in均可迭代一个列表；但是用于迭代的值却不同，
-// for..in迭代的是对象的 键 的列表，而for..of则迭代对象的键对应的值。
+// for..in迭代的是对象的 键 的列表，而for..of则迭代对象的键对应的值
 let arrList = [4, 5, 6];
 for (let i in arrList) {
   console.log(i); // 0 1 2
