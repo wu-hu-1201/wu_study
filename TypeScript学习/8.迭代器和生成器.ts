@@ -21,7 +21,7 @@ for (let i of arrList) {
   console.log(i); // 4 5 6
 }
 
-// for..in可以操作任何对象；它提供了查看对象属性的一种方法。 但是 for..of关注于迭代对象的值。
+// for..in可以操作任何对象；它提供了查看对象属性的一种方法。 但是 for..of关注于迭代对象的值
 
 // 内置对象Map和Set已经实现了Symbol.iterator方法，让我们可以访问它们保存的值。
 let pets = new Set(["Cat", "Dog", "Hamster"]);
